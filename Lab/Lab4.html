@@ -8454,8 +8454,8 @@ $$ \text{Cost} = 120F + 40(T_9 + T_{10} + T_{11} + T_{12} + T_{13}) $$</p>
 <ul>
 <li>9点: $F + T_9 \ge 10$</li>
 <li>10点: $F + T_9 + T_{10} \ge 12$</li>
-<li>11点: $F + T_9 + T_{10} + T_{11} \ge 14$</li>
-<li>12点: $F + T_9 + T_{10} + T_{11} + T_{12} \ge 16$</li>
+<li>11点: $F/2 + T_9 + T_{10} + T_{11} \ge 14$</li>
+<li>12点: $F/2 + T_9 + T_{10} + T_{11} + T_{12} \ge 16$</li>
 <li>13点: $F + T_{10} + T_{11} + T_{12} + T_{13} \ge 18$</li>
 <li>14点: $F + T_{11} + T_{12} + T_{13} \ge 17$</li>
 <li>15点: $F + T_{12} + T_{13} \ge 15$</li>
@@ -8496,8 +8496,8 @@ $$ \text{Cost} = 120F + 40(T_9 + T_{10} + T_{11} + T_{12} + T_{13}) $$</p>
 <span class="n">A</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">],</span>  <span class="c1"># 9:00 needs</span>
     <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">],</span>  <span class="c1"># 10:00 needs</span>
-    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">],</span>  <span class="c1"># 11:00 needs</span>
-    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">],</span>  <span class="c1"># 12:00 needs</span>
+    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">],</span>  <span class="c1"># 11:00 needs</span>
+    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">],</span>  <span class="c1"># 12:00 needs</span>
     <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span>  <span class="c1"># 13:00 needs</span>
     <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span>  <span class="c1"># 14:00 needs</span>
     <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span>  <span class="c1"># 15:00 needs</span>
@@ -8529,13 +8529,13 @@ $$ \text{Cost} = 120F + 40(T_9 + T_{10} + T_{11} + T_{12} + T_{13}) $$</p>
 <pre>        message: Optimization terminated successfully. (HiGHS Status 7: Optimal)
         success: True
          status: 0
-            fun: 1520.0
-              x: [ 9.000e+00  1.000e+00  2.000e+00  2.000e+00  5.000e+00
+            fun: 1700.0
+              x: [ 9.000e+00  1.000e+00  6.500e+00  2.000e+00  5.000e+00
                    1.000e+00]
             nit: 6
-          lower:  residual: [ 0.000e+00  1.000e+00  2.000e+00  2.000e+00
+          lower:  residual: [ 0.000e+00  1.000e+00  6.500e+00  2.000e+00
                               5.000e+00  1.000e+00]
-                 marginals: [ 4.000e+01  0.000e+00  0.000e+00  0.000e+00
+                 marginals: [ 6.000e+01  0.000e+00  0.000e+00  0.000e+00
                               0.000e+00  0.000e+00]
           upper:  residual: [ 3.000e+00        inf        inf        inf
                                     inf        inf]
@@ -8543,10 +8543,10 @@ $$ \text{Cost} = 120F + 40(T_9 + T_{10} + T_{11} + T_{12} + T_{13}) $$</p>
                               0.000e+00  0.000e+00]
           eqlin:  residual: []
                  marginals: []
-        ineqlin:  residual: [ 0.000e+00  0.000e+00  0.000e+00  3.000e+00
-                              1.000e+00  0.000e+00  0.000e+00  0.000e+00]
-                 marginals: [-0.000e+00 -4.000e+01 -0.000e+00 -0.000e+00
-                             -0.000e+00 -4.000e+01 -0.000e+00 -0.000e+00]
+        ineqlin:  residual: [ 0.000e+00  4.500e+00  0.000e+00  3.000e+00
+                              5.500e+00  0.000e+00  0.000e+00  0.000e+00]
+                 marginals: [-0.000e+00 -0.000e+00 -4.000e+01 -0.000e+00
+                             -0.000e+00 -0.000e+00 -4.000e+01 -0.000e+00]
  mip_node_count: 0
  mip_dual_bound: 0.0
         mip_gap: 0.0
@@ -8567,7 +8567,7 @@ $$ \text{Cost} = 120F + 40(T_9 + T_{10} + T_{11} + T_{12} + T_{13}) $$</p>
 <li><strong>全职雇员数量</strong> $F$: $9$人</li>
 <li><strong>临时雇员数量</strong> $T_i$:<ul>
 <li>9点到13点 $T_9$: $1$人</li>
-<li>10点到14点 $T_{10}$: $2$人</li>
+<li>10点到14点 $T_{10}$: $7$人 （代码运行结果为 $6.5$，但人数应为整数）</li>
 <li>11点到15点 $T_{11}$: $2$人</li>
 <li>12点到16点 $T_{12}$: $5$人</li>
 <li>13点到17点 $T_{13}$: $1$人</li>
@@ -8575,7 +8575,7 @@ $$ \text{Cost} = 120F + 40(T_9 + T_{10} + T_{11} + T_{12} + T_{13}) $$</p>
 </li>
 </ul>
 <h4 id="%E6%80%BB%E8%96%AA%E6%B0%B4%E5%BC%80%E9%94%80">总薪水开销<a class="anchor-link" href="#%E6%80%BB%E8%96%AA%E6%B0%B4%E5%BC%80%E9%94%80">¶</a></h4><ul>
-<li><strong>总费用</strong>: $\$1520$</li>
+<li><strong>总费用</strong>: $\$1720$</li>
 </ul>
 </div>
 </div>
@@ -8760,9 +8760,9 @@ $$
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Random natural numbers:  [13, 9, 1, 9, 51, 9, 62, 42, 39, 31, 70, 55, 41, 5, 23, 35, 52, 16]
-Length of longest arithmetic subsequence:  4
-Longest arithmetic subsequence:  [1, 5, 9, 13]
+<pre>Random natural numbers:  [87, 67, 6, 16, 20, 29, 98, 16, 80, 26, 93, 68, 14, 47, 78, 96, 100, 45]
+Length of longest arithmetic subsequence:  3
+Longest arithmetic subsequence:  [6, 16, 26]
 </pre>
 </div>
 </div>
@@ -8776,7 +8776,7 @@ Longest arithmetic subsequence:  [1, 5, 9, 13]
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <blockquote>
-<p>answer：代码运行的结果显示，产生的 $18$ 个随机数中最长等差数列个数为 $4$，分别为 $1, 5, 9, 13$，公差为 $4$</p>
+<p>answer：代码运行的结果显示，产生的 $18$ 个随机数中最长等差数列个数为 $3$，分别为 $6, 16, 26$，公差为 $10$</p>
 </blockquote>
 </div>
 </div>
@@ -8855,9 +8855,9 @@ Longest arithmetic subsequence:  [1, 5, 9, 13]
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Random uniform numbers:  0.1231, 0.9427, 0.0320, 0.7582, 0.5595, 0.2963, 0.6457, 0.9131, 0.0552, 0.5608, 0.5560, 0.6935, 0.3768, 0.4011, 0.2642, 0.2174, 0.0573, 0.9969
+<pre>Random uniform numbers:  0.4703, 0.6774, 0.8234, 0.5798, 0.7375, 0.2528, 0.7100, 0.1970, 0.5772, 0.1506, 0.2524, 0.2742, 0.1484, 0.3560, 0.0040, 0.8935, 0.2166, 0.8635
 Length of longest arithmetic subsequence:  3
-Longest approximate arithmetic subsequence:  0.0573, 0.2174, 0.3768
+Longest approximate arithmetic subsequence:  0.1484, 0.2524, 0.3560
 </pre>
 </div>
 </div>
@@ -8871,7 +8871,7 @@ Longest approximate arithmetic subsequence:  0.0573, 0.2174, 0.3768
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <blockquote>
-<p>answer：代码运行的结果显示，产生的 $18$ 个随机数中最长等差数列个数为 $3$，分别为 $0.0573, 0.2174, 0.3768$，公差大约为 $0.160$</p>
+<p>answer：代码运行的结果显示，产生的 $18$ 个随机数中最长等差数列个数为 $3$，分别为 $0.1484, 0.2524, 0.3560$，公差大约为 $0.104$</p>
 </blockquote>
 </div>
 </div>
