@@ -1,31 +1,14 @@
-# MathExperiment_Course_Resources
+# 重庆大学数学实验课程
 
-Explore the intersection of mathematics and real-world applications in this repository. Dive into concise class notes, engaging labs, and invaluable resources that bring the cutting-edge Mathematics Experiment course to life, all through the versatile lens of Python.
+本仓库收录了本人在学习**数学实验**课程时所完成的**笔记**、**实验**等内容。本着开源精神特地将所有原创资料整理至此，希望与所有学习这门课程的朋友一同进步。因个人能力有限难免有诸多瑕疵甚至错误，若在使用过程中发现，麻烦在**Issues**中提出！
 
-## Discover the Course
+## 资料分布说明
 
-This course breaks the traditional boundaries of mathematics, focusing on:
+### 课程笔记
 
-- **Solving Complex Problems:** Utilizing Python for computational problem-solving.
-- **Real-World Applications:** From differential equations to optimization, see math in action.
-- **Innovative Learning:** Engaging labs and comprehensive notes guide you beyond the textbook.
+- **Class Notes**：2024年春季学期重庆大学数学实验课程课堂笔记。
 
-## What's Inside
+### 课程实验
 
-📚 **Class Notes:** Simplified, yet comprehensive guides to complex concepts.
-
-🔬 **Labs:** Hands-on exercises that challenge and refine your understanding.
-
-📂 **Extra Gems:** Curated additional resources to fuel your curiosity and knowledge.
-
-## Engage and Contribute
-
-Our repository thrives on collaboration. Whether you're adding to the notes, refining lab exercises, or sharing new resources, your contributions are what make this community vibrant.
-
-## Get Started
-
-Dive into our folders and embark on a mathematical journey that's as enlightening as it is practical. Whether you're a student, educator, or enthusiast, there's something here for everyone.
-
----
-
-**Join us in exploring the dynamic world of mathematics with Math Experiment course. Let's make the abstract concrete, together.**
+- **Lab**：2024年春季学期重庆大学数学实验课程实验内容。
+  - **Labx.ipynb** 为核心文件，**Labx.html** 只是为了方便导出成 PDF 文件形式。
